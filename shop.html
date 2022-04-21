@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phoenix:Shop</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="shop.css">
+
+    <script src="shop.js">
+    </script>
+    <style>
+
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .head1 {
+            margin: 10px 10px 10px 10px;
+            font-size: 50px;
+            color: #5d001e;
+            font-weight: bolder;
+            /* animation : slideInLeft 2s linear 1; */
+            display: flex;
+            /* position:relative; */
+        }
+
+        .logo {
+            /* position: relative; */
+            position: 50px 50px;
+            /* padding: 0px 1000px; */
+        }
+
+        img.rounded-corners {
+            border-radius: 30px;
+        }
+
+        .menu {
+            background-color: #e3e2df;
+            padding: 10px 0px 10px 0px;
+            color: #9a1750;
+            font-weight: bold;
+            overflow: hidden;
+            border-radius: 30px
+        }
+
+        .menu a {
+            color: #9a1750;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            background-color: #e3afbc;
+            color: #5d001e;
+            border-radius: 50px;
+        }
+
+        .saleslide {
+            color: #5d001e;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'corbel';
+            animation: movebanner 5s linear infinite;
+        }
+
+        @keyframes movebanner {
+            from {
+                margin-left: 100%;
+                width: 100%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 0%;
+                color: #9a1750;
+            }
+
+            footer {
+			width: 100%;
+			position: absolute;
+			bottom: 0px;
+			background-color: #e3e2df;
+			color: #9a1750;
+			padding: 0px;
+			text-align: center;
+			font-size: 15px;
+			border-radius: 30px;
+			position: absolute;
+			font-weight: bolder;
+            font-family: 'Lato', sans-serif;
+		        }
+        }
+    </style>
+</head>
+
+<body>
+    <h5 class="saleslide">SALE</h5>
+    <header>
+        <div class="head1"><img class="logo" src="./imgs/onlydesign.jpg" alt="Logo" height="150px" width="150px"
+                style="border-radius: 70px;" /> Phoenix Beauty</div>
+
+        <div class="head2"></div>
+    </header>
+
+    <nav class="menu">
+        <a href="phoenixbeautyfinal.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blogs.html">Blogs</a>
+    </nav>
+
+    <section class="package" id="package">
+        <div class="package-cards">
+            <div class="card">
+                <div class="card-title">
+                    <h1>Cosmetics</h1>
+                </div>
+                <div class="card-items">
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Lipstick</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Eyeliner</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>nails<span>(traditional french)</span></p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Foundation</span></p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Blushes</span></p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Brushes</span></p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Eyebrow shaper</span></p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Colour palate</span></p>
+                    </div>
+                    <button class="btn" onclick="location.href='cosmetics.html'">EXPLORE MORE</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <h1>Haircare</h1>
+                </div>
+                <div class="card-items">
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Shampoo</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Conditioner</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Highlights</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Hair Mask</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Hair accessories</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Hair oils</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Straightner</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Hair Dryer</p>
+                    </div>
+                    <button class="btn" onclick="location.href='carthair.html'">EXPLORE MORE</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <h1>Bath & Body</h1>
+                </div>
+                <div class="card-items">
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Lotions</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Soap</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Foam</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Razor</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Exfoilate Masks</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Scrubs</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Body Oils</p>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-check-square check-icon"></i>
+                        <p>Body Butter</p>
+                    </div>
+                    <button class="btn" onclick="location.href='bathandbody.html'">EXPLORE MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+		<div class="copy">
+			<p>&copy; All Rights Reserved</p>
+			<span>Created by 💜 Shikhaa - Khushi - Foram</span>
+		</div>
+	</footer>
+</body>
+
+</html>

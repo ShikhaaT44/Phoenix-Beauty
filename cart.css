@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+  }
+
+nav {
+    margin-bottom: 1em !important;
+  }
+  h1 {
+    color: #e3afbc;
+    font-family: 'Lato', sans-serif;
+  }
+  .cart {
+    box-shadow: 0 0 5px #e3afbc;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+  .tiny {
+    background-color: #e3afbc;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #clear:hover {
+    background-color: #e3afbc;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }

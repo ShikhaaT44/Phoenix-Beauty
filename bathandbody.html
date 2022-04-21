@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Phoenix:BathBody</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+	<link rel="stylesheet" href="cart.css">
+	<link rel="preload" href="./preloader.html" as="html" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+		* {
+			font-family: 'Lato', sans-serif;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.head1 {
+			margin: 10px 10px 10px 10px;
+			font-size: 50px;
+			color: #5d001e;
+			font-weight: bolder;
+			/* animation : slideInLeft 2s linear 1; */
+			display: flex;
+			font-family: 'Lato', sans-serif;
+			/* position:relative; */
+		}
+
+		.logo {
+			/* position: relative; */
+			position: 50px 50px;
+			/* padding: 0px 1000px; */
+		}
+
+		img.rounded-corners {
+			border-radius: 30px;
+		}
+
+		.menu {
+			background-color: #e3e2df;
+			padding: 10px 0px 10px 0px;
+			color: #9a1750;
+			font-weight: bold;
+			overflow: hidden;
+			border-radius: 30px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.menu a {
+			color: #9a1750;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.menu a:hover {
+			background-color: #e3afbc;
+			color: #5d001e;
+			border-radius: 50px;
+		}
+
+		footer {
+			width: 100%;
+			position: absolute;
+			bottom: 0px;
+			background-color: #e3e2df;
+			color: #9a1750;
+			padding: 0px;
+			text-align: center;
+			font-size: 15px;
+			border-radius: 30px;
+			position: relative;
+			font-weight: bolder;
+			font-family: 'Lato', sans-serif;
+		}
+
+
+
+		.saleslide {
+			color: #5d001e;
+			text-align: center;
+			font-size: 15px;
+			font-family: 'corbel';
+			animation: movebanner 5s linear infinite;
+		}
+
+		@keyframes movebanner {
+			from {
+				margin-left: 100%;
+				width: 100%;
+			}
+
+			to {
+				margin-left: 0%;
+				width: 0%;
+				color: #9a1750;
+			}
+		}
+
+		/* ************************** PHOTO GALLERY ******************************/
+		.gallery {
+			width: 100%;
+			padding: 7rem 0;
+			position: relative;
+		}
+
+		.gallery::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 60%;
+			top: 20%;
+			left: 0;
+			background-color: var(--main-color);
+			z-index: -1;
+		}
+
+		.gallery-list-img {
+			width: 100%;
+			max-width: 1200px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 2.5rem auto;
+			position: relative;
+		}
+
+		.gallery-img img {
+			margin: 0.5rem;
+			filter: drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.2));
+		}
+
+		.gallery-img:hover img {
+			transform: scale(1.1);
+		}
+
+		.gallery-content button {
+			margin: 0 auto;
+		}
+
+
+
+		/*****************************************************************************************/
+	</style>
+</head>
+
+<body>
+	<h5 class="saleslide">SALE</h5>
+	<header>
+		<div class="head1"><img class="logo" src="./imgs/onlydesign.jpg" alt="Logo" height="150px" width="150px"
+				style="border-radius: 70px;" /> Phoenix Beauty</div>
+
+		<div class="head2"></div>
+	</header>
+
+	<nav class="menu">
+		<a href="phoenixbeautyfinal.html">Home</a>
+		<a href="shop.html">Shop</a>
+		<a href="contact.html">Contact Us</a>
+		<a href="blogs.html">Blogs</a>
+	</nav>
+
+	<section>
+		<div class="row">
+			<div class="medium-4  columns">
+				<div class="cart">
+					<h1>Cart items</h1>
+					<div class="row">
+						<div class="medium-6 columns">
+							<button class="tiny secondary" id="clear">Clear the cart</button>
+						</div>
+						<div class="medium-6 columns">
+							<button class="tiny disabled" title="Work in progress"
+								onclick="location.href='preloader.html'">Checkout</button>
+						</div>
+					</div>
+					<div id="cartItems">Loading cart...</div>
+					Total price: <strong id="totalPrice">0 RUPEES</strong>
+				</div>
+			</div>
+
+			<div class="medium-8 columns">
+				<div class="product medium-4 columns" data-name="LOTIONS" data-price="2000" data-id="2">
+					<img src="./imgs/lotion.jfif" alt="" />
+					<h3>Lotions</h3>
+					<input type="number" class="count" value="1" />
+					<button class="tiny">Add to cart</button>
+				</div>
+				<hr>
+				<div class="product medium-4 columns" data-name="FOAM" data-price="3000" data-id="2">
+					<img src="./imgs/foam.jfif" alt="" />
+					<h3>BodyWash</h3>
+					<input type="number" class="count" value="1" />
+					<button class="tiny">Add to cart</button>
+				</div>
+				<hr>
+				<div class="product medium-4 columns" data-name="SCRUBS" data-price="4000" data-id="2">
+					<img src="./imgs/scrubs.jfif" alt="" />
+					<h3>Scrubs</h3>
+					<input type="number" class="count" value="1" />
+					<button class="tiny">Add to cart</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<div>
+
+	</div>
+
+	<footer class="footer" id="contact">
+		<div class="copy">
+			<p>&copy; All Rights Reserved</p>
+			<span>Created by 💜 Shikhaa - Khushi - Foram</span>
+		</div>
+	</footer>
+</body>
+<script type="text/template" id="cartT">
+	<% _.each(items, function (item) { %> 
+	  <div class = "panel"> 
+		  <h3> <%= item.name %> </h3>  
+		  <span class="label">
+  <%= item.count %> piece<% if(item.count > 1)
+  {%>s
+  <%}%> for <%= item.total %>₹</span > </div>
+  <% }); %>
+  </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+<script src="cart.js"></script>
+
+</html>

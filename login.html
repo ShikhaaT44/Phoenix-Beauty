@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Phoenix:Login</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.head1 {
+	margin: 10px 10px 10px 10px;
+	font-size: 50px;
+	color: #5d001e;
+	font-weight: bolder;
+	/* animation : slideInLeft 2s linear 1; */
+	display: flex;
+	/* position:relative; */
+}
+
+.logo {
+	/* position: relative; */
+	position: 50px 50px;
+	/* padding: 0px 1000px; */
+}
+
+img.rounded-corners {
+	border-radius: 30px;
+}
+
+.menu {
+	background-color: #e3e2df;
+	padding: 10px 0px 10px 0px;
+	color: #9a1750;
+	font-weight: bold;
+	overflow: hidden;
+	border-radius: 30px
+}
+
+.menu a {
+	color: #9a1750;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.menu a:hover {
+	background-color: #e3afbc;
+	color: #5d001e;
+	border-radius: 50px;
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: #e3e2df;
+	color: #9a1750;
+	padding: 0px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 30px;
+	position: relative;
+	font-weight: bolder;
+}
+
+.sec{
+	background-image: url('./imgs/logowhitedesign.jpg') ;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+		
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="head1"><img class="logo" src="imgs/onlydesign.jpg" alt="Logo" height="150px" width="150px" style="border-radius: 70px;" /> Phoenix Beauty</div>
+			<div class="head2"></div>
+
+	</header>
+
+	<nav class="menu">
+	</nav>
+
+	<section  class="sec">
+		<div class="container">
+			<h2 class="form-title">Login</h2>
+			<form action="home.html">
+
+				<div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" required>
+					<br />
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="psw" placeholder="PASSWORD" name="pwd" required>
+				</div>
+				<br />
+				<button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+				<br />
+				<br />
+				<p class="form-text">
+					<a href="#" class="form__link">Forgot your password?</a>
+				</p>
+				<p class="form-text">
+					Don't have an account? <a class="form__link" href="signup.html" id="linkCreateAccount"> Create
+						account</a>
+				</p>
+			</form>
+		</div>
+	</section>
+	<footer class="footer" id="contact">
+		<div class="copy">
+			<p>&copy; All Rights Reserved</p>
+			<span>Created by 💜 Shikhaa - Khushi - Foram</span>
+		</div>
+	</footer>
+</body>
+<script src="login.js">
+</script>
+
+</html>
